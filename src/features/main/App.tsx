@@ -3,7 +3,7 @@ import Footer from "../sections/Footer";
 
 function App() {
   return (
-    <div className="read-the-docs">
+    <div className="">
       <NavBar />
       <Footer />
     </div>
