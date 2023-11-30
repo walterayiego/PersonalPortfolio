@@ -2,19 +2,20 @@
   margin: 0 auto;
   /* padding: 2rem; */
   width: 100%;
-  @apply bg-gradient-to-br from-[#E3E0DD] to-[#E4E1DE];
+  @apply bg-gradient-to-br from-[#efdece] to-[#b59f89];
 }
 
 .col {
   display: flex;
   flex-direction: column;
+  
 }
 .row {
   display: flex;
   flex-direction: row;
 }
 .element {
-  @apply h-screen w-screen p-[5vh];
+  @apply h-screen w-full p-[5vh];
 }
 
 .rowCenter {

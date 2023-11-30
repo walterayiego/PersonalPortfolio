@@ -14,7 +14,7 @@ function NavBar({ children }: NavBarProps) {
   };
 
   return (
-    <nav className="sticky top-0 h-[6vh] w-full row items-center justify-between">
+    <nav className="fixed top-0 h-[6vh] w-full row items-center justify-between z-50">
       <div className="rowCenter h-full ">
         <div
           onClick={() => handleNavigate()}

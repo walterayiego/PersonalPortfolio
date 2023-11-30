@@ -3,25 +3,33 @@ import Call from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
 import NavLinks from "../../components/NavLinks";
 
-function Home() {
+interface HomeProps {
+  children: React.ReactNode;
+}
+
+function Home({ children }: HomeProps) {
   return (
-    <div className="relative grid grid-flow-col w-full h-[90vh] border border-black p-[5vw]  ">
-      <div className="col">
+    <div className="relative grid grid-cols-3 w-full h-[90vh] p-[5vw]  ">
+      <div className="col col-span-2">
         <p className="text-[4em] font-bold ">WALTER</p>
         <p className=" text-2xl uppercase">Full Stack-Software Developer</p>
-        <div className="flex space-x-2">
-          <AvatarGroup
-            className="w-full items-start border border-black justify-end"
-            total={24}
-          >
-            <Avatar alt="Remy Sharp" src={Me} />
-            <Avatar alt="Travis Howard" src={Me} />
-            <Avatar alt="Agnes Walker" src={Me} />
-            <Avatar alt="Trevor Henderson" src={Me} />
-          </AvatarGroup>
-          <img src={Call}  className="w-[40vw] h-[40vh] object-cover" />
+        <div className="grid grid-cols-3 h-full space-x-2 m-2">
+          <div className="col-span-2">
+            <AvatarGroup className="w-full items-start justify-end" total={24}>
+              <Avatar alt="Remy Sharp" src={Me} />
+              <Avatar alt="Travis Howard" src={Me} />
+              <Avatar alt="Agnes Walker" src={Me} />
+              <Avatar alt="Trevor Henderson" src={Me} />
+            </AvatarGroup>
+            <span className="text-base font-light">
+              Many clients are satisfied and happy with the results I provide.
+            </span>
+            {children}
+          </div>
+          <div>
+            <img src={Call} className="w-full h-1/2 object-contain z-40" />
+          </div>
         </div>
-        <NavLinks classes="" />
       </div>
       <div className="flex justify-between items-center h-[50vh]">
         <img
