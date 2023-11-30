@@ -1,8 +1,33 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* padding: 2rem; */
+  width: 100%;
+  @apply bg-gradient-to-br from-[#E3E0DD] to-[#E4E1DE];
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.element {
+  @apply h-screen w-screen p-[5vh];
+}
+
+.rowCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.colCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -16,6 +41,11 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.title {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0.5em 0;
 }
 
 @keyframes logo-spin {
