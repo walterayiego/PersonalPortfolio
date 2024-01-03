@@ -1,7 +1,6 @@
 import { Avatar, AvatarGroup } from "@mui/material";
 import Call from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
-import NavLinks from "../../components/NavLinks";
 
 interface HomeProps {
   children: React.ReactNode;
@@ -9,7 +8,7 @@ interface HomeProps {
 
 function Home({ children }: HomeProps) {
   return (
-    <div className="relative grid grid-cols-3 w-full h-[90vh] p-[5vw]  ">
+    <div className="relative grid grid-cols-3 w-full h-[95vh] p-[5vw] m-[2vw]">
       <div className="col col-span-2">
         <p className="text-[4em] font-bold ">WALTER</p>
         <p className=" text-2xl uppercase">Full Stack-Software Developer</p>
