@@ -1,7 +1,6 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import { useNavigate } from "react-router-dom";
-import NavLinks from "../../components/NavLinks";
 
 interface NavBarProps {
   children: React.ReactNode;

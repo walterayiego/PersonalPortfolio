@@ -5,6 +5,10 @@ import Skills from "../features/skills/Skills";
 import Testimonials from "../features/testimonials/Testimonials";
 import NavLinks from "../components/NavLinks";
 
+
+const width = window.innerWidth;
+const height = window.innerHeight;
+
 const LinkNames = [
   {
     name: "HOME",
@@ -22,4 +26,4 @@ const LinkNames = [
   { name: "TESTIMONIALS", to: "testimonials", component: Testimonials },
 ];
 
-export { LinkNames };
+export { LinkNames, width, height };
