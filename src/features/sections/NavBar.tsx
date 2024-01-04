@@ -23,7 +23,7 @@ function NavBar({ children }: NavBarProps) {
         </div>
         <p className="mx-3 bold">WALTER</p>
       </div>
-      <div className="w-1/2">{children}</div>
+      <div className="sm:w-1/2 hidden sm:flex">{children}</div>
 
       <button className="bg-[#030303] w-fit h-full rowCenter p-1 px-3 space-x-2">
         <p className="text-white text-sm font-semibold">CONTACT ME</p>
