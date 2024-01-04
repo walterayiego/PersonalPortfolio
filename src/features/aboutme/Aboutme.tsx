@@ -1,7 +1,12 @@
 function Aboutme() {
   return (
-    <div>Aboutme</div>
-  )
+    <div className="w-full h-full">
+      <p>About Me</p>
+      <div className="bg-brown">
+        <p>Helllo world</p>
+      </div>
+    </div>
+  );
 }
 
-export default Aboutme
+export default Aboutme;

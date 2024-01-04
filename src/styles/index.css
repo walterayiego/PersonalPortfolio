@@ -9,7 +9,7 @@
 
   /* color-scheme: light dark; */
   @apply bg-gradient-to-br from-[#efdece] to-[#b59f89];
-  
+
   @apply w-full;
 
   font-synthesis: none;
@@ -20,8 +20,20 @@
 
 body {
   /* @apply bg-gradient-to-br from-[#efdece] to-[#b59f89]; */
-  @apply w-[95vw] p-0 m-0;
+  @apply w-[95vw] p-0 m-0 overflow-x-hidden;
 }
+body::-webkit-scrollbar {
+  @apply bg-transparent w-[1vw] hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+  /* background-color: #eab308; */
+  @apply bg-primary;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 
 p,
 h1 {
@@ -46,3 +58,15 @@ li {
     @apply bg-gradient-to-br from-[#efdece] to-[#b59f89];
   }
 } */
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  .animation-delay-6000 {
+    animation-delay: 6s;
+    animation-duration: 3s;
+  }
+}

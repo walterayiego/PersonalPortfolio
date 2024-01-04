@@ -6,7 +6,7 @@ const NavLinks = () => {
   const handleSetActive = (to: string) => {
     console.log(to);
   };
-  const offset = window.innerHeight * 0.10;
+  const offset = window.innerHeight * 0.08;
 
   return LinkNames.map((link, index) => (
     <Link
