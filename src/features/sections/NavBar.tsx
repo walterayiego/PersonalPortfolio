@@ -12,7 +12,6 @@ function NavBar({ children }: NavBarProps) {
   const handleNavigate = () => {
     // navigate("/");
     console.log("navigate");
-
   };
 
   return (

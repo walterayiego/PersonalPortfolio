@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative w-full app">
+    <div className="relative app">
       <NavBar>
         <ul className="row justify-between items-center space-x-[2vw]">
           {NavLinks()}
@@ -22,8 +22,8 @@ function App() {
 
       {LinkNames.map((link, index) => {
         return (
-          <Element key={index} name={link.to} className="element">
-            {link.component()}
+          <Element key={index} name={link.to} className="w-screen">
+            {link.component()}dsfds
           </Element>
         );
       })}

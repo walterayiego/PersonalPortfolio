@@ -31,6 +31,9 @@
   font-weight: 300;
   margin: 0.5em 0;
 }
+.heading1 {
+  @apply sm:text-5xl text-2xl font-bold uppercase;
+}
 
 .active {
   @apply scale-105 text-black font-semibold p-2;

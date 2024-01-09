@@ -39,7 +39,7 @@ function Home({ children }: HomeProps) {
       <div className={`row flex-1 sm:my-[2vh]`}>
         <div className="sm:w-2/3 flex-1 col space-x-2 ">
           <div>
-            <p className="sm:text-5xl text-2xl font-bold text-center sm:text-left">WALTER AYIEGO</p>
+            <p className="heading1 text-center sm:text-left">WALTER AYIEGO</p>
             <p className=" text-2xl uppercase">
               Code Alchemist | Full-Stack Solutions
             </p>
