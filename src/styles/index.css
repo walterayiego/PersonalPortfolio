@@ -8,12 +8,12 @@
   font-weight: 400;
 
   /* color-scheme: light dark; */
-  @apply bg-gradient-to-br from-[#efdece] to-[#b59f89];
+  @apply bg-gradient-to-br from-primary to-secondary;
 
   @apply w-full;
 
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

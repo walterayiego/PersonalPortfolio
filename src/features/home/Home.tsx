@@ -1,15 +1,11 @@
+import { useState } from "react";
 import { Avatar, AvatarGroup } from "@mui/material";
+
 import Call from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
-import kladz from "../../assets/kladz.png";
-import dishi from "../../assets/dishi.png";
-import ryze from "../../assets/ryze.png";
-import wavu from "../../assets/wavu.png";
 import topStar from "../../assets/topStar.png";
-import star from "../../assets/Star.png";
-
-import { width } from "../../constants/Constants";
-import { useState } from "react";
+import { Companies, width } from "../../constants/Constants";
+import SkillLinks from "../../components/SkillLinks";
 
 interface HomeProps {
   children: React.ReactNode;
@@ -29,21 +25,25 @@ function Home({ children }: HomeProps) {
   }, [width]);
 
   return (
-    <div className="relative col w-[95vw] min-h-[98vh]  p-[3vw] mx-[2vw]">
+    <div className="relative col w-[95vw] h-screen justify-between px-[3vw] pt-[5vh] mx-[2vw]">
       <img
         src={topStar}
-        className=" self-center mt-4 h-[2em] w-[2em] object-contain"
+        className="self-center mt-[2vh] h-[2em] w-[2em] object-contain"
         alt="start"
       />
-      <div className=" sm:h-[5vh] h-[3vh]" />
-      <div className={`row flex-1 `}>
-        <div className={`${isDesktop ? "" : ""} sm:w-2/3 flex-1 col `}>
-          <p className="sm:text-5xl text-2xl font-bold ">WALTER AYIEGO</p>
-          <p className=" text-2xl uppercase">Full Stack-Software Developer</p>
+      <div className={`row flex-1 my-[4vh]`}>
+        <div className="sm:w-2/3 flex-1 col space-x-2 ">
+          <div>
+            <p className="sm:text-5xl text-2xl font-bold ">WALTER AYIEGO</p>
+            <p className=" text-2xl uppercase">Code Alchemist | Full-Stack Solutions</p>
+            <span className="text-xs font-light ">
+            Crafting innovative web and mobile experiences from idea to deployment
+            </span>
+          </div>
 
-          <div className="row h-full space-x-2 m-2">
-            <div className="sm:w-2/3 col justify-end">
-              <div>
+          <div className="flex-1 row w-full justify-around">
+            <div className="sm:w-2/3 col  ">
+              <div id="client_div" className="my-[2vh]">
                 <div className="row justify-between">
                   <AvatarGroup
                     className="w-fit items-start justify-end opacity-70"
@@ -59,20 +59,23 @@ function Home({ children }: HomeProps) {
                     ))}
                   </AvatarGroup>
                 </div>
-                <span className="text-sm font-light my-2">
+                <span className="text-xs font-light my-2">
                   Many clients are satisfied and happy with the results I
                   provide. With over 4+ years of experience in the field, I have
                   the skills and knowledge to help you achieve your goals.
                 </span>
               </div>
-              <div className="w-fit">{children}</div>
-            </div>
-            {/* Call Image */}
 
-            <div className="hidden sm:flex sm:flex-1 ">
-              <img src={Call} className="w-full h-1/2 object-contain z-40" />
+              <div id="links-div" className="col justify-between flex-1 p-2 w-fit">
+                {children}
+              </div>
+            </div>
+            <div className="hidden sm:flex sm:flex-col sm:flex-1 justify-center">
+              <img src={Call} className="w-full h-1/3 object-contain z-40" />
             </div>
           </div>
+
+          {/* Call Image */}
         </div>
         {/*End of first col-span-2  */}
 
@@ -99,32 +102,3 @@ function Home({ children }: HomeProps) {
 }
 
 export default Home;
-
-const Companies = [
-  { name: "WavuLabs", logo: wavu, link: "https://wavulabs.org/" },
-  {
-    name: "Dishi",
-    logo: dishi,
-    link: "https://play.google.com/store/apps/details?id=com.dishi.app&pli=1",
-  },
-  { name: "Kladz", logo: kladz, link: "https://kladz.vercel.app/" },
-  { name: "RYZE", logo: ryze, link: "https://www.theryze.net/" },
-];
-
-const SkillLinks = () => (
-  <div className="grid grid-cols-4 w-full h-[5vh] my-[3vh]">
-    {Companies.map((company, index) => (
-      <div
-        key={index}
-        className="rowCenter space-x-2 opacity-50 mx-3 w-[20vw] cursor-pointer "
-        onClick={() => window.open(company.link)}
-      >
-        <img
-          src={company.logo}
-          className="w-[5vw] bg-black h-full object-contain rounded-xl filter blur-[1px]"
-        />
-        <p className=" uppercase font-bold flex-1">{company.name}</p>
-      </div>
-    ))}
-  </div>
-);

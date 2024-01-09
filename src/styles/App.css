@@ -10,7 +10,9 @@
   @apply h-screen w-full;
    /* p-[5vh]; */
 }
-
+.bg {
+  @apply bg-gradient-to-br from-primary to-secondary;
+}
 .rowCenter {
   display: flex;
   flex-direction: row;
