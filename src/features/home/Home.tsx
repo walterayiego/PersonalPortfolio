@@ -14,30 +14,38 @@ interface HomeProps {
 function Home({ children }: HomeProps) {
   const [isDesktop, setIsDesktop] = useState(false);
 
-  useState(() => {
-    if (window.innerWidth > 640) {
-      setIsDesktop(true);
-      console.log("desktop");
-    } else {
-      setIsDesktop(false);
-      console.log("mobile");
-    }
-  }, [width]);
+  // useState(() => {
+  //   if (window.innerWidth > 640) {
+  //     setIsDesktop(true);
+  //     console.log("desktop");
+  //   } else {
+  //     setIsDesktop(false);
+  //     console.log("mobile");
+  //   }
+  // }, [width]);
 
   return (
-    <div className="relative col w-[95vw] h-screen justify-between px-[3vw] pt-[5vh] mx-[2vw]">
+    <div className="relative col w-[95vw] h-screen justify-between px-[3vw] pt-[5vh] mx-[2vw] overflow-clip">
       <img
         src={topStar}
-        className="self-center mt-[2vh] h-[2em] w-[2em] object-contain"
+        className="hidden sm:flex self-center mt-[2vh] h-[2em] w-[2em] object-contain"
         alt="start"
       />
-      <div className={`row flex-1 my-[4vh]`}>
+      <img
+        src={Me}
+        className="sm:hidden self-center h-[20vh] w-full object-contain"
+        alt="start"
+      />
+      <div className={`row flex-1 sm:my-[2vh]`}>
         <div className="sm:w-2/3 flex-1 col space-x-2 ">
           <div>
-            <p className="sm:text-5xl text-2xl font-bold ">WALTER AYIEGO</p>
-            <p className=" text-2xl uppercase">Code Alchemist | Full-Stack Solutions</p>
+            <p className="sm:text-5xl text-2xl font-bold text-center sm:text-left">WALTER AYIEGO</p>
+            <p className=" text-2xl uppercase">
+              Code Alchemist | Full-Stack Solutions
+            </p>
             <span className="text-xs font-light ">
-            Crafting innovative web and mobile experiences from idea to deployment
+              Crafting innovative web and mobile experiences from idea to
+              deployment
             </span>
           </div>
 
@@ -54,7 +62,7 @@ function Home({ children }: HomeProps) {
                         key={index}
                         alt="Remy Sharp"
                         src={item.logo}
-                        className="bg-black filter blur-[1px]"
+                        className="bg-black filter blur-[1px] grayscale"
                       />
                     ))}
                   </AvatarGroup>
@@ -66,7 +74,10 @@ function Home({ children }: HomeProps) {
                 </span>
               </div>
 
-              <div id="links-div" className="col justify-between flex-1 p-2 w-fit">
+              <div
+                id="links-div"
+                className="col justify-between flex-1 p-2 w-fit"
+              >
                 {children}
               </div>
             </div>

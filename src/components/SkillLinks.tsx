@@ -5,14 +5,14 @@ const SkillLinks = () => (
     {Companies.map((company, index) => (
       <div
         key={index}
-        className="rowCenter space-x-2 opacity-50 mx-3 w-fit h-[5vh] cursor-pointer "
+        className="rowCenter  w-fit h-[5vh] cursor-pointer "
         onClick={() => window.open(company.link)}
       >
         <img
           src={company.logo}
-          className="w-[5vw]  h-[5vh] object-contain rounded-xl filter blur-[1px]"
+          className="w-[5vw] h-[5vh] object-contain rounded-xl filter blur-[1px] grayscale"
         />
-        <p className=" uppercase font-bold flex-1">{company.name}</p>
+        <p className="uppercase px-1 font-bold flex-1 opacity-50">{company.name}</p>
       </div>
     ))}
   </div>

@@ -13,7 +13,9 @@ function App() {
   return (
     <div className="relative w-full app">
       <NavBar>
-        <ul className="row justify-between items-center space-x-[2vw]">{NavLinks()}</ul>
+        <ul className="row justify-between items-center space-x-[2vw]">
+          {NavLinks()}
+        </ul>
       </NavBar>
 
       {/* SECTIONS */}

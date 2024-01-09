@@ -1,6 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import { useNavigate } from "react-router-dom";
+import SideDrawer from "../../components/SideDrawer";
 
 interface NavBarProps {
   children: React.ReactNode;
@@ -9,20 +10,22 @@ interface NavBarProps {
 function NavBar({ children }: NavBarProps) {
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate("/");
+    // navigate("/");
+    console.log("navigate");
+
   };
 
   return (
     <nav className="fixed bg top-0 h-[6vh] w-[100%] row items-center justify-between z-50">
-      <div className="rowCenter h-full ">
+      <SideDrawer>
         <div
           onClick={() => handleNavigate()}
-          className=" bg-[#030303] w-[13vw] p-1 h-full rowCenter"
+          className="cursor-pointer bg-[#030303] w-[13vw] p-1 h-full rowCenter"
         >
           <MenuIcon className=" text-white" fontSize="large" />
         </div>
-        <p className="mx-3 bold">WALT</p>
-      </div>
+      </SideDrawer>
+
       <div className="hidden sm:flex w-fit">{children}</div>
 
       <button className="bg-[#030303] w-fit h-full rowCenter p-1 px-3 space-x-2">
