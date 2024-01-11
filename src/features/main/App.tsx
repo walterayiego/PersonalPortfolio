@@ -1,14 +1,11 @@
 import NavBar from "../sections/NavBar";
-import { useEffect, useRef, useState } from "react";
-import { Element, animateScroll as scroll, scrollSpy } from "react-scroll";
+import React, { useEffect, useState } from "react";
 import { LinkNames, width } from "../../constants/Constants";
 import NavLinks from "../../components/NavLinks";
 import Footer from "../sections/Footer";
+import Contacts from "../contacts/Contacts";
 
 function App() {
-  useEffect(() => {
-    scrollSpy.update();
-  }, []);
 
   return (
     <div className="relative app">
@@ -22,13 +19,13 @@ function App() {
 
       {LinkNames.map((link, index) => {
         return (
-          <Element key={index} name={link.to} className="w-screen">
-            {link.component()}dsfds
-          </Element>
+          <div id={link.to} key={index} className="w-screen colCenter py-4">
+            {link.component()}
+          </div>
         );
       })}
+      <Contacts />
 
-      <div className="h-[30vh] bg-black" />
       <Footer />
     </div>
   );

@@ -13,7 +13,7 @@
   @apply w-full;
 
   font-synthesis: none;
-  text-rendering: optimizeLegibility; 
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +34,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 p,
 h1 {
   @apply font-mono;
@@ -43,7 +42,9 @@ h1 {
 li {
   @apply text-sm p-2;
 }
-
+.sections {
+  @apply w-[95vw] px-[3vw] pt-[5vh] mx-[2vw] overflow-clip;
+}
 /* 
 @media (prefers-color-scheme: light) {
   :root {
@@ -69,4 +70,12 @@ li {
     animation-delay: 6s;
     animation-duration: 3s;
   }
+}
+
+.libre {
+  font-family: "Abhaya Libre", sans-serif;
+}
+.aladin {
+  font-family: 'Aladin', sans-serif;
+
 }

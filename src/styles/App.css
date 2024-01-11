@@ -8,7 +8,7 @@
 }
 .element {
   @apply h-screen w-full;
-   /* p-[5vh]; */
+  /* p-[5vh]; */
 }
 .bg {
   @apply bg-gradient-to-br from-primary to-secondary;
@@ -38,9 +38,75 @@
 .active {
   @apply scale-105 text-black font-semibold p-2;
 }
+.inactive {
+  @apply cursor-pointer font-mono text-lg text-slate-500 uppercase;
+}
 .bold {
   @apply font-semibold text-lg;
 }
 .borders {
   @apply border-2 border-black;
+}
+
+.slide_left {
+  animation: slide_left ease-in forwards;
+  animation-delay: 50ms;
+  animation-duration: 300ms;
+  transform: translateX(-100%);
+}
+
+@keyframes slide_left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide_right {
+  animation: slide_right ease-in-out forwards;
+  animation-delay: 50ms;
+  animation-duration: 300ms;
+  transform: translateX(+100%);
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translateX(+100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.fade_in {
+  animation: fade_in ease-in forwards;
+  animation-duration: 4000ms;
+  animation-delay: 50ms;
+  opacity: 0;
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1.05;
+    animation-play-state: paused;
+  }
+}
+.fade_out {
+  animation: fade_out ease-in forwards;
+  animation-duration: 400ms;
+  animation-delay: 50ms;
+  opacity: 1;
+}
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 1.05;
+    animation-play-state: paused;
+  }
 }

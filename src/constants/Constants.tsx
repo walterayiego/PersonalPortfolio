@@ -26,6 +26,7 @@ const LinkNames = [
   { name: "PORTFOLIO", to: "portfolio", component: Portfolio },
   { name: "TESTIMONIALS", to: "testimonials", component: Testimonials },
 ];
+
 const Companies = [
   { name: "WavuLabs", logo: wavu, link: "https://wavulabs.org/" },
   {
@@ -36,5 +37,6 @@ const Companies = [
   { name: "Kladz", logo: kladz, link: "https://kladz.vercel.app/" },
   { name: "RYZE", logo: ryze, link: "https://www.theryze.net/" },
 ];
+const threshold = { threshold: 1 };
 
-export { LinkNames, width, height, Companies };
+export { LinkNames, width, height, Companies, threshold };

@@ -1,27 +1,17 @@
-import { Link, animateScroll as scroll } from "react-scroll";
 import { LinkNames } from "../constants/Constants";
+import { ContextData } from "../apis/ContextProvider";
 
 const NavLinks = () => {
-  
-  const handleSetActive = (to: string) => {
-    console.log(to);
-  };
-  const offset = window.innerHeight * 0.08;
+  const { fragment }: any = ContextData();
 
   return LinkNames.map((link, index) => (
-    <Link
+    <a
       key={index}
-      activeClass="active"
-      className="cursor-pointer font-mono text-lg text-slate-500 uppercase"
-      to={link.to}
-      spy={true}
-      smooth={true}
-      offset={-offset}
-      duration={500}
-      onSetActive={handleSetActive}
+      href={`#${link.to}`}
+      className={fragment === link.to ? "active" : "inactive"}
     >
       {link.name}
-    </Link>
+    </a>
   ));
 };
 

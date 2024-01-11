@@ -10,13 +10,15 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import theme from "./styles/theme";
 import AppRoutes from "./apis/AppRoutes";
-
+import { ContextProvider } from "./apis/ContextProvider";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppRoutes />
+      <ContextProvider>
+        <AppRoutes />
+      </ContextProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

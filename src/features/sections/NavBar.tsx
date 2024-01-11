@@ -27,10 +27,10 @@ function NavBar({ children }: NavBarProps) {
 
       <div className="hidden sm:flex w-fit">{children}</div>
 
-      <button className="bg-[#030303] w-fit h-full rowCenter p-1 px-3 space-x-2">
+      <a href="#contactme" className="bg-[#030303] w-fit h-full rowCenter p-1 px-3 space-x-2">
         <p className="text-white text-sm font-semibold">CONTACT ME</p>
         <CallMadeIcon className="text-white" fontSize="small" />
-      </button>
+      </a>
     </nav>
   );
 }

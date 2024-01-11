@@ -1,15 +1,23 @@
+import { useEffect } from "react";
 import { Link } from "@mui/material";
 import ProjectItem from "./component/ProjectItem";
 import projects from "./component/Projects";
+import { useInView } from "react-intersection-observer";
+import { ContextData } from "../../apis/ContextProvider";
 
 function Portfolio() {
+  const { ref, inView }: any = useInView({ threshold: 0.2 });
+  const { fragment, setFragment }: any = ContextData();
+
+  useEffect(() => {
+    inView && setFragment("portfolio");
+  }, [inView]);
+
   return (
-    <div id="projects" className={`w-full  borders`}>
+    <div ref={ref} className={`w-full  borders`}>
       <div className={`relative px-2 py-16`}>
         <div className={``}>
-          <p className={`heading1 text-left `}>
-            Portfolio
-          </p>
+          <p className={`heading1 text-left `}>Portfolio</p>
           <h2 className="text-center py-4">What we&apos;ve Builts</h2>
         </div>
         <div className="grid md:grid-cols-2 w-full px-[2vw] gap-8">
@@ -33,9 +41,9 @@ function Portfolio() {
         <p>
           For more visit our
           <Link href="">
-            <a className=" text-yellow-800 font-semibold text-2xl ">
+            <span className=" text-yellow-800 font-semibold text-2xl ">
               Github Page
-            </a>
+            </span>
           </Link>
         </p>
       </div>
