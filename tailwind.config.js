@@ -8,6 +8,7 @@ export default {
         secondary: "#b59f89",
         brown: "#4d352c",
         dark: "#030303",
+        light: "#EBEBEB",
         lightWhite: "#C8C8C8",
       },
     },
