@@ -14,7 +14,7 @@ function Portfolio() {
   }, [inView]);
 
   return (
-    <div ref={ref} className={`w-full  borders`}>
+    <div ref={ref} className={`w-full`}>
       <div className={`relative px-2 py-16`}>
         <div className={``}>
           <p className={`heading1 text-left `}>Portfolio</p>
