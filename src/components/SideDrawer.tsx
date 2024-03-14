@@ -2,7 +2,7 @@ import * as React from "react";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import DrawerContent from "./DrawerContent";
 
-export default function SideDrawer({ children }: any) {
+export default function SideDrawer(props: any) {
   const [state, setState] = React.useState(false);
 
   const toggleDrawer =
@@ -21,7 +21,9 @@ export default function SideDrawer({ children }: any) {
 
   return (
     <React.Fragment>
-      <div onClick={toggleDrawer(true)}>{children}</div>
+      <div {...props} onClick={toggleDrawer(true)}>
+        {props.children}
+      </div>
       <SwipeableDrawer
         anchor="left"
         open={state}

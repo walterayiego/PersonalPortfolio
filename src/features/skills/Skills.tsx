@@ -82,11 +82,11 @@ export default function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="colCenter w-[20vw] h-[20vh] rounded-md borders cursor-pointer space-y-2"
+              className="colCenter w-[20vw] h-[20vh] rounded-md border-[0.5px] border-black cursor-pointer space-y-2"
             >
               <img
                 src={skill.icon}
-                className="w-2/3 h-2/3 object-scale-down bg-lightWhite/20 filter "
+                className="w-1/4 aspect-square object-scale-down bg-primary/20 filter "
                 alt={skill.skill}
               />
               <p className="text-center">{skill.skill}</p>

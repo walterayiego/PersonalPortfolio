@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#efdece",
+        main:"#556cd6",
         secondary: "#b59f89",
         brown: "#4d352c",
         dark: "#030303",
@@ -14,4 +15,4 @@ export default {
     },
   },
   plugins: [],
-};
+}; 

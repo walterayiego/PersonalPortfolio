@@ -15,19 +15,17 @@ function NavBar({ children }: NavBarProps) {
   };
 
   return (
-    <nav className="fixed bg top-0 h-[6vh] w-[100%] row items-center justify-between z-50">
-      <SideDrawer>
-        <div
-          onClick={() => handleNavigate()}
-          className="cursor-pointer bg-[#030303] w-[13vw] p-1 h-full rowCenter"
-        >
-          <MenuIcon className=" text-white" fontSize="large" />
-        </div>
+    <nav className="fixed bg top-0 h-[6vh] w-[100%] row items-center justify-between z-50 overflow-hidden">
+      <SideDrawer className="cursor-pointer bg-[#030303] w-[13vw] p-1 h-full rowCenter">
+        <MenuIcon className=" text-white" fontSize="large" />
       </SideDrawer>
 
       <div className="hidden sm:flex w-fit">{children}</div>
 
-      <a href="#contactme" className="bg-[#030303] w-fit h-full rowCenter p-1 px-3 space-x-2">
+      <a
+        href="#contactme"
+        className="bg-[#030303] w-fit h-full rowCenter p-1 px-3 space-x-2"
+      >
         <p className="text-white text-sm font-semibold">CONTACT ME</p>
         <CallMadeIcon className="text-white" fontSize="small" />
       </a>

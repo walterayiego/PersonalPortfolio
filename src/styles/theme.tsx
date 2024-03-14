@@ -13,7 +13,7 @@ const theme = createTheme({
       dark: "#030303",
     },
     secondary: {
-      main: "#19857b",
+      main: "#efdece",
     },
     error: {
       main: red.A400,
@@ -22,7 +22,6 @@ const theme = createTheme({
       primary: "#000000",
       secondary: "#FFFFFF",
     },
-      
   },
 });
 

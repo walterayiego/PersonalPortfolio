@@ -18,7 +18,7 @@ function Portfolio() {
       <div className={`relative px-2 py-16`}>
         <div className={``}>
           <p className={`heading1 text-left `}>Portfolio</p>
-          <h2 className="text-center py-4">What we&apos;ve Builts</h2>
+          <h2 className="text-center py-4">What I&apos;ve Built</h2>
         </div>
         <div className="grid md:grid-cols-2 w-full px-[2vw] gap-8">
           {projects.map((project, index) => {

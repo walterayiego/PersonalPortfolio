@@ -8,7 +8,7 @@ import Contacts from "../contacts/Contacts";
 function App() {
 
   return (
-    <div className="relative app">
+    <div className="relative">
       <NavBar>
         <ul className="row justify-between items-center space-x-[2vw]">
           {NavLinks()}
@@ -19,7 +19,7 @@ function App() {
 
       {LinkNames.map((link, index) => {
         return (
-          <div id={link.to} key={index} className="w-screen colCenter py-4">
+          <div id={link.to} key={index} className="">
             {link.component()}
           </div>
         );

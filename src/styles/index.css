@@ -10,7 +10,7 @@
   /* color-scheme: light dark; */
   @apply bg-gradient-to-br from-primary to-secondary;
 
-  @apply w-full;
+  /* @apply w-full; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,7 +20,7 @@
 
 body {
   /* @apply bg-gradient-to-br from-[#efdece] to-[#b59f89]; */
-  @apply w-[95vw] p-0 m-0 overflow-x-hidden;
+  @apply p-0 m-0 overflow-x-hidden;
 }
 body::-webkit-scrollbar {
   @apply bg-transparent w-[1vw] hidden;
@@ -45,7 +45,7 @@ li {
 .sections {
   @apply w-[95vw] px-[3vw] pt-[5vh] mx-[2vw] overflow-clip;
 }
-/* 
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -58,7 +58,7 @@ li {
     color: #ffffff;
     @apply bg-gradient-to-br from-[#efdece] to-[#b59f89];
   }
-} */
+}
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
