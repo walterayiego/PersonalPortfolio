@@ -25,7 +25,7 @@ function Services() {
       <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 md:gap-10">
           {servicesData.map((service) => (
-            <div className={`shadow-lg rounded-lg p-5 bg-slate-900 ${fadeIn}`}>
+            <div key={service.name} className={`shadow-lg rounded-lg p-5 bg-slate-900 ${fadeIn}`}>
               <div className="flex items-center gap-x-4 mb-3">
                 <div className="inline-flex justify-center items-center rounded-full border-2 border-main/60 p-2 bg-main/40">
                   {service.icon}

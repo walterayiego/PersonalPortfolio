@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { Avatar, AvatarGroup, Link } from "@mui/material";
+import { useEffect } from "react";
+import { Avatar, AvatarGroup } from "@mui/material";
 
 import Call from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
 import topStar from "../../assets/topStar.png";
-import { Companies, width } from "../../constants/Constants";
+import { Companies } from "../../constants/Constants";
 import SkillLinks from "../../components/SkillLinks";
 import { useInView } from "react-intersection-observer";
 import { ContextData } from "../../apis/ContextProvider";
@@ -14,7 +14,7 @@ interface HomeProps {
 }
 
 function Home({ children }: HomeProps) {
-  const { fragment, setFragment }: any = ContextData();
+  const { setFragment }: any = ContextData();
   const { ref, inView }: any = useInView({ threshold: 0.6 });
 
   useEffect(() => {
@@ -22,10 +22,7 @@ function Home({ children }: HomeProps) {
   }, [inView]);
 
   return (
-    <div
-      ref={ref}
-      className="relative col h-screen justify-between sections"
-    >
+    <div ref={ref} className="relative col h-screen justify-between sections">
       <img
         src={topStar}
         className="hidden sm:flex self-center mt-[2vh] h-[2em] w-[2em] object-contain"
