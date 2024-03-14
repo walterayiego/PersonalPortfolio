@@ -7,7 +7,7 @@ import { ContextData } from "../../apis/ContextProvider";
 
 function Portfolio() {
   const { ref, inView }: any = useInView({ threshold: 0.2 });
-  const { fragment, setFragment }: any = ContextData();
+  const { setFragment }: any = ContextData();
 
   useEffect(() => {
     inView && setFragment("portfolio");

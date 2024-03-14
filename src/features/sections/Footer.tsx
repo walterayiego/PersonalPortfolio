@@ -1,4 +1,3 @@
-import { Avatar } from "@mui/material";
 import logo from "../../assets/Logo.png";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
