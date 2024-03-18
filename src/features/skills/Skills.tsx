@@ -74,22 +74,27 @@ export default function Skills() {
   }, [inView]);
 
   return (
-    <div ref={ref} className="bg-[#EBEBEB] ">
-      <div className="sections">
-        <h1 className="heading1">Skills</h1>
+    <div ref={ref} className="bg-black min-h-screen w-screen col items-center ">
+      <div className="sections min-h-[90vh] col">
+        <h1 className="heading1 text-white text-center">Skills</h1>
 
-        <div className="grid grid-cols-4  h-fit flex-wrap  p-4 gap-2">
+        <div
+          className={`flex-1 grid grid-cols-2 sm:grid-cols-4 w-full h-full flex-wrap  p-4 gap-2 place-items-center`}
+        >
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="colCenter w-[20vw] h-[20vh] rounded-md border-[0.5px] border-black cursor-pointer space-y-2"
+              className="colCenter w-[7vw] aspect-square rounded-md cursor-pointer space-y-2 
+            backdrop-blur-sm border-primary border shadow-primary shadow-md
+               hover:wobble-hor-top
+              "
             >
               <img
                 src={skill.icon}
-                className="w-1/4 aspect-square object-scale-down bg-primary/20 filter "
                 alt={skill.skill}
+                className="w-full h-full blur-sm object-cover object-center filter invert"
               />
-              <p className="text-center">{skill.skill}</p>
+              <p className="text-left text-white">{skill.skill}</p>
             </div>
           ))}
         </div>

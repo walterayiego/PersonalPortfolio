@@ -34,10 +34,10 @@ function Home({ children }: HomeProps) {
         alt="start"
       />
       <div className={`row flex-1 sm:my-[2vh]`}>
-        <div className="sm:w-2/3 flex-1 col space-x-2 ">
-          <div>
-            <p className="heading1 text-center sm:text-left">WALTER AYIEGO</p>
-            <p className=" text-2xl uppercase">
+        <div className="sm:w-2/3 flex-1 col space-x-2 scale-in-bl ">
+          <div className="">
+            <p className="heading1 text-center sm:text-left ">WALTER AYIEGO</p>
+            <p className=" text-2xl uppercase ">
               Code Alchemist | Full-Stack Solutions
             </p>
             <span className="text-sm font-light ">
@@ -78,7 +78,7 @@ function Home({ children }: HomeProps) {
                 {children}
               </div>
             </div>
-            <div className="hidden sm:flex sm:flex-col sm:flex-1 justify-center">
+            <div className="hidden sm:flex sm:flex-col sm:flex-1 justify-center ">
               <img src={Call} className="w-full h-1/3 object-contain z-40" />
             </div>
           </div>
@@ -88,7 +88,7 @@ function Home({ children }: HomeProps) {
         {/*End of first col-span-2  */}
 
         <div className="hidden sm:flex sm:flex-col sm:w-1/3 justify-between   ">
-          <div className="flex-1 hidden sm:flex sm:h-full">
+          <div className="flex-1 hidden sm:flex sm:h-full tilt-in-fwd-tr">
             <img
               className="flex-1 object-top object-cover rounded-3xl blur-[1px]"
               src={Me}

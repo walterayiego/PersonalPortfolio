@@ -8,7 +8,7 @@ import Contacts from "../contacts/Contacts";
 function App() {
 
   return (
-    <div className="relative">
+    <div className="relative colCenter">
       <NavBar>
         <ul className="row justify-between items-center space-x-[2vw]">
           {NavLinks()}
