@@ -13,39 +13,44 @@ function Contacts() {
   }, [inView]);
 
   return (
-    <div
-      ref={ref}
-      id="contactme"
-      className="w-screen h-[50vh] bg-brown grid sm:grid-cols-2"
-    >
-      <div className="colCenter h-[50vh]">
-        <FormDialog open={open} setOpen={setOpen} />
-        <div className="w-3/4 h-3/4 col justify-center space-y-[2vh]">
-          <span className="text-white aladin text-4xl">
-            Discuss for a cool project!
-          </span>
-          <span className="text-white libre text-xs ">
-            You can request any design and innovation you want , I will
-            recommend or build the best software solution for your business
-          </span>
-
-          <div className="rowCenter w-fit gap-2 ">
-            <span onClick={()=> setOpen(true)} className="text-brown text-center p-3 w-fit bg-white cursor-pointer">
-              Get Started
+    <>
+      <FormDialog open={open} setOpen={setOpen} />
+      <div
+        ref={ref}
+        id="contactme"
+        className="w-screen h-[50vh] bg-brown grid sm:grid-cols-2"
+      >
+        <div className="colCenter h-[50vh] w-full">
+          <div className="w-3/4 h-3/4 col justify-center space-y-[2vh]">
+            <span className="text-white aladin text-4xl">
+              Discuss for a cool project!
+            </span>
+            <span className="text-white libre text-xs ">
+              You can request any design and innovation you want , I will
+              recommend or build the best software solution for your business
             </span>
 
-            <span className="text-white/40 underline">More About Me</span>
+            <div className="rowCenter w-fit gap-2 ">
+              <span
+                onClick={() => setOpen(true)}
+                className="text-brown text-center p-3 w-fit bg-white cursor-pointer"
+              >
+                Get Started
+              </span>
+
+              <span className="text-white/40 underline">More About Me</span>
+            </div>
           </div>
         </div>
+        <div className="h-[50vh] sm:flex sm:flex-col hidden overflow-clip">
+          <img
+            src="https://picsum.photos/20/20"
+            alt=""
+            className="object-contain flex-1"
+          />
+        </div>
       </div>
-      <div className="h-[50vh] sm:flex sm:flex-col hidden overflow-clip">
-        <img
-          src="https://picsum.photos/20/20"
-          alt=""
-          className="object-contain flex-1"
-        />
-      </div>
-    </div>
+    </>
   );
 }
 

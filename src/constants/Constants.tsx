@@ -68,7 +68,7 @@ const LinkNames = [
   },
   { name: "SERVICES", to: "services", component: Services },
   { name: "PORTFOLIO", to: "portfolio", component: Portfolio },
-  { name: "SKILLS", to: "skills", component: Skills },
+  // { name: "SKILLS", to: "skills", component: Skills },
   // { name: "TESTIMONIALS", to: "testimonials", component: Testimonials },
 ];
 

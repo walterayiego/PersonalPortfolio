@@ -9,7 +9,7 @@ function Footer() {
       id="footer"
       className="h-[40vh] w-[100vw] bg-black p-[2vw] px-[5vw] row justify-around "
     >
-      <div className="col w-1/3  h-full">
+      <div className="col w-1/3  h-full hidden sm:block">
         <div className="row items-center h-1/4 ">
           <img
             src={logo}
@@ -22,7 +22,7 @@ function Footer() {
           Crafting innovative web and mobile experiences from idea to deployment
         </p>
       </div>
-      <div className="col  h-full">
+      <div className="h-full  hidden sm:block">
         <p className="text-xl aladin text-white">About</p>
         <ul className="text-white">
           <li>About</li>
