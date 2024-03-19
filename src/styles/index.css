@@ -77,5 +77,23 @@ li {
 }
 .aladin {
   font-family: 'Aladin', sans-serif;
+}
+.background-container {
+  @apply absolute h-full w-full -z-10;
+  overflow: hidden;
+  background-image: url('../assets/Meteor.svg');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: round;
+  animation: slideDown 3s linear infinite; /* Adjust duration as needed */
+}
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    background-position: 0 0; /* Start position */
+  }
+  100% {
+    transform: translateY(100%); /* End position below the container */
+    background-position: 0 100%; /* End position */
+  }
 }

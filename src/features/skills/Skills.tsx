@@ -77,16 +77,15 @@ export default function Skills() {
     <div ref={ref} className="bg-black min-h-screen w-screen col items-center ">
       <div className="sections min-h-[90vh] col">
         <h1 className="heading1 text-white text-center">Skills</h1>
-
         <div
           className={`flex-1 grid grid-cols-2 sm:grid-cols-4 w-full h-full flex-wrap  p-4 gap-2 place-items-center`}
         >
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="colCenter w-[7vw] aspect-square rounded-md cursor-pointer space-y-2 
-            backdrop-blur-sm border-primary border shadow-primary shadow-md
-               hover:wobble-hor-top
+              className="colCenter min-w-[7vw] aspect-square rounded-md cursor-pointer space-y-2 
+               backdrop-blur-sm border-primary border shadow-primary shadow-md
+               wobble-hor-top
               "
             >
               <img

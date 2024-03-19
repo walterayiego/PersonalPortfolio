@@ -23,6 +23,9 @@ function Home({ children }: HomeProps) {
 
   return (
     <div ref={ref} className="relative col h-screen justify-between sections">
+      {/* <div className="absolute w-full h-full">
+        <div className="background-container" />
+      </div> */}
       <img
         src={topStar}
         className="hidden sm:flex self-center mt-[2vh] h-[2em] w-[2em] object-contain"
