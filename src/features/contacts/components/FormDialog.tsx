@@ -17,7 +17,7 @@ function FormDialog(props: FormDialogProps) {
     <Dialog
       onClose={handleClose}
       open={open}
-      className=""
+      className="w-full"
     >
       <ContactForm />
     </Dialog>

@@ -1,18 +1,17 @@
 import * as React from "react";
-import Dialog from "@mui/material/Dialog";
 
 function ContactForm() {
   return (
     <form
       action="https://formsubmit.co/walterayiego@gmail.com"
       method="POST"
-      className="h-[90vh] w-[50vw] p-3 bg-white rounded-xl col"
+      className="h-[90vh] w-[95vw] sm:w-[80vw] p-3 border border-red-800 bg-white rounded-xl col overflow-y-scroll"
       // encType='multipart/form-data'
     >
       <input type="hidden" name="_captcha" value="false"></input>
 
       <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-        <div className="flex flex-col">
+        <div className="col">
           <label className="uppercase text-sm py-2">Name</label>
           <input
             className="border-2 rounded-lg p-3 flex border-gray-300"
