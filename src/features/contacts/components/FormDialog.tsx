@@ -1,6 +1,7 @@
 import React from "react";
 import { Dialog, DialogContent, Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -39,16 +40,16 @@ function FormDialog(props: FormDialogProps) {
             action="https://formsubmit.co/walterayiego@gmail.com"
             method="POST"
             // encType='multipart/form-data'
-            className=" relative p-3 col w-full h-fit col overflow-y-scroll bg-white rounded-xl"
+            className=" relative p-3 col w-full sm:w-[70%] h-fit col overflow-y-scroll bg-white rounded-xl"
           >
-            <p
-              className="absolute top-0 right-0 bg-black/20 p-1 cursor-pointer"
+            <div
+              className="absolute rounded-full aspect-square top-0 right-3 bg-brown/20 p-1 cursor-pointer"
               onClick={() => setOpen(!open)}
             >
-              X
-            </p>
+              <CloseIcon />
+            </div>
             <input type="hidden" name="_captcha" value="false"></input>
-            <p className="sm:text-xl p-2">Leave a Message</p>
+            <p className="sm:text-xl text-center p-2">Leave a Message</p>
 
             <div className="grid md:grid-cols-2 gap-4 w-full py-2">
               <div className="col">
