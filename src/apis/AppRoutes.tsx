@@ -6,25 +6,20 @@ const Loader = lazy(() => import("../features/main/App"));
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense
-              fallback={
-                <div className="w-screen h-screen ease-out duration-75">
-                  Loading
-                </div>
-              }
-            >
-              <Loader />
-            </Suspense>
-          }
-        />
-        <Route path="*" element={<NoPageFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Suspense
+      fallback={
+        <div className="w-screen h-screen ease-out duration-75 colCenter">
+          <p>Loading</p>
+        </div>
+      }
+    >
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Loader />} />
+          <Route path="*" element={<NoPageFound />} />
+        </Routes>
+      </BrowserRouter>
+    </Suspense>
   );
 };
 
