@@ -82,7 +82,7 @@ function Home({ children }: HomeProps) {
               </div>
             </div>
             <div className="hidden sm:flex sm:flex-col sm:flex-1 justify-center ">
-              <img src={Call} className="w-full h-1/3 object-contain z-40" />
+              <img src={Call} className="w-full h-1/3 object-contain z-40 jello-vertical" />
             </div>
           </div>
 
@@ -98,7 +98,7 @@ function Home({ children }: HomeProps) {
               alt=""
             />
           </div>
-          <p className="self-end w-[60vw] text-sm my-2 opacity-60">
+          <p className="self-end w-[60vw] text-sm my-2 text-focus-in">
             I have a passion for coding and technology, and I'm eager to learn
             and grow in the field of software development. I enjoy working on
             various projects, experimenting with new technologies, and

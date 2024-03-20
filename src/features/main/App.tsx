@@ -14,9 +14,6 @@ function App() {
           {NavLinks()}
         </ul>
       </NavBar>
-
-      {/* SECTIONS */}
-
       {LinkNames.map((link, index) => {
         return (
           <div id={link.to} key={index} className="">
@@ -25,7 +22,6 @@ function App() {
         );
       })}
       <Contacts />
-
       <Footer />
     </div>
   );
