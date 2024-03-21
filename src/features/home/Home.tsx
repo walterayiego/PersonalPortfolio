@@ -8,6 +8,7 @@ import { Companies } from "../../constants/Constants";
 import SkillLinks from "../../components/SkillLinks";
 import { useInView } from "react-intersection-observer";
 import { ContextData } from "../../apis/ContextProvider";
+import Socials from "../../components/Socials";
 
 interface HomeProps {
   children: React.ReactNode;
@@ -72,6 +73,7 @@ function Home({ children }: HomeProps) {
                   provide. With over 4+ years of experience in the field, I have
                   the skills and knowledge to help you achieve your goals.
                 </span>
+                <Socials styles="" iconColor="text"/>
               </div>
 
               <div

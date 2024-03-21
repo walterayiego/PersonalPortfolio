@@ -23,11 +23,11 @@ function Footer() {
               WALTER AYIEGO
             </p>
           </div>
-          <p className="text-sm font-light text-white">
+          <p className="text-sm text-center font-light text-white">
             Crafting innovative web and mobile experiences from idea to
             deployment
           </p>
-          <Socials styles="h-[5vh] " />
+          <Socials styles="h-[5vh] justify-center " />
         </div>
         <div className="h-full col hidden sm:block about my-[2vh]">
           <p className="text-xl aladin text-white">About</p>
