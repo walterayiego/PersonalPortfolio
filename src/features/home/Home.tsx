@@ -37,10 +37,10 @@ function Home({ children }: HomeProps) {
         alt="start"
       />
       <div className={`row flex-1 sm:my-[2vh]`}>
-        <div className="sm:w-2/3 flex-1 col space-x-2 scale-in-bl ">
+        <div className="sm:w-2/3 flex-1 col scale-in-bl ">
           <div className="">
-            <p className="heading1 text-center sm:text-left ">WALTER AYIEGO</p>
-            <p className=" text-2xl uppercase ">
+            <p className="sm:text-[5em] text-[3em] font-semibold py-4 sm:text-left ">WALTER AYIEGO</p>
+            <p className=" sm:text-2xl uppercase ">
               Code Alchemist | Full-Stack Solutions
             </p>
             <span className="text-sm font-light ">
@@ -49,13 +49,13 @@ function Home({ children }: HomeProps) {
             </span>
           </div>
 
-          <div className="flex-1 row w-full justify-around">
+          <div className="flex-1 row w-full justify-between">
             <div className="sm:w-2/3 col  ">
               <div id="client_div" className="my-[2vh]">
                 <div className="row justify-between">
                   <AvatarGroup
-                    className="w-fit items-start justify-end opacity-70"
-                    total={24}
+                    className="w-fit items-start justify-end opacity-70 py-2"
+                    total={26}
                   >
                     {Companies.map((item, index) => (
                       <Avatar
@@ -67,7 +67,7 @@ function Home({ children }: HomeProps) {
                     ))}
                   </AvatarGroup>
                 </div>
-                <span className="text-sm opacity-70 font-light my-2">
+                <span className="text-lg py-2 opacity-70 font-light my-2 border">
                   Many clients are satisfied and happy with the results I
                   provide. With over 4+ years of experience in the field, I have
                   the skills and knowledge to help you achieve your goals.
@@ -81,9 +81,15 @@ function Home({ children }: HomeProps) {
                 {children}
               </div>
             </div>
-            <div className="hidden sm:flex sm:flex-col sm:flex-1 justify-center ">
-              <img src={Call} className="w-full h-1/3 object-contain z-40 jello-vertical" />
-            </div>
+            <a
+              href="#contactme"
+              className="hidden sm:flex sm:flex-col sm:flex-1 justify-center "
+            >
+              <img
+                src={Call}
+                className="w-full h-1/3 object-contain z-40 jello-vertical"
+              />
+            </a>
           </div>
 
           {/* Call Image */}

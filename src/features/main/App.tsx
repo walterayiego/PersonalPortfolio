@@ -6,7 +6,6 @@ import Footer from "../sections/Footer";
 import Contacts from "../contacts/Contacts";
 
 function App() {
-
   return (
     <div className="relative colCenter w-full overflow-x-hidden">
       <NavBar>
@@ -14,14 +13,14 @@ function App() {
           {NavLinks()}
         </ul>
       </NavBar>
-      {LinkNames.map((link, index) => {
-        return (
-          <div id={link.to} key={index} className="">
-            {link.component()}
-          </div>
-        );
-      })}
-      <Contacts />
+      {LinkNames.map((link, index) => (
+        <div id={link.to} key={index} className="">
+          {link.component()}
+        </div>
+      ))}
+      <div id="contactme" className="">
+        <Contacts />
+      </div>
       <Footer />
     </div>
   );

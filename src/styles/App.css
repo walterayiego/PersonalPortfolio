@@ -6,13 +6,6 @@
   display: flex;
   flex-direction: row;
 }
-.element {
-  @apply h-screen w-full;
-  /* p-[5vh]; */
-}
-.bg {
-  @apply bg-gradient-to-br from-primary to-secondary;
-}
 .rowCenter {
   display: flex;
   flex-direction: row;
@@ -24,6 +17,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.element {
+  @apply h-screen w-full;
+  /* p-[5vh]; */
+}
+.bg {
+  @apply bg-gradient-to-br from-primary to-secondary;
 }
 
 .title {
@@ -46,6 +46,9 @@
 }
 .borders {
   @apply border-2 border-black;
+}
+.socials {
+  @apply rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer hover:scale-110 ease-in duration-300 mx-2;
 }
 
 .slide_left {
@@ -117,3 +120,6 @@
   border-right: 2px solid #000; /* Right border */
 }
 
+.about a {
+  @apply text-sm pl-2 p-1 text-white first-letter:uppercase lowercase;
+}

@@ -1575,11 +1575,6 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash.debounce@^4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
-  integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
-
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
@@ -1853,6 +1848,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-icons@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.0.1.tgz#1694e11bfa2a2888cab47dcc30154ce90485feee"
+  integrity sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==
+
 react-intersection-observer@^9.5.3:
   version "9.5.3"
   resolved "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.5.3.tgz"
@@ -1867,14 +1867,6 @@ react-is@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
-
-react-lazy-load-image-component@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-lazy-load-image-component/-/react-lazy-load-image-component-1.6.0.tgz#f262c2f163052d71011e282031fd60aafa6494ac"
-  integrity sha512-8KFkDTgjh+0+PVbH+cx0AgxLGbdTsxWMnxXzU5HEUztqewk9ufQAu8cstjZhyvtMIPsdMcPZfA0WAa7HtjQbBQ==
-  dependencies:
-    lodash.debounce "^4.0.8"
-    lodash.throttle "^4.1.1"
 
 react-router-dom@^6.20.0:
   version "6.20.0"

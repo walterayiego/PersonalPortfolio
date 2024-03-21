@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { ContextData } from "../../apis/ContextProvider";
 import FormDialog from "./components/FormDialog";
+import Img from "../../assets/iot.png";
 
 function Contacts() {
   const { ref, inView }: any = useInView({ threshold: 0.9 });
-  const { fragment, setFragment }: any = ContextData();
+  const { setFragment }: any = ContextData();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -42,11 +43,11 @@ function Contacts() {
             </div>
           </div>
         </div>
-        <div className="h-[50vh] sm:flex sm:flex-col hidden overflow-clip">
+        <div className="h-[50vh] w-full sm:flex sm:flex-col hidden overflow-clip">
           <img
-            src="https://picsum.photos/20/20"
-            alt=""
-            className="object-contain flex-1"
+            src={Img}
+            alt="img"
+            className="object-contain flex-1 bg-black"
           />
         </div>
       </div>

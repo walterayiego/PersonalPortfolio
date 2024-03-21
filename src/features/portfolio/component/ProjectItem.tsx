@@ -1,5 +1,4 @@
 import { Link } from "@mui/material";
-import React from "react";
 import { useInView } from "react-intersection-observer";
 
 const ProjectItem = ({
@@ -20,6 +19,7 @@ const ProjectItem = ({
       >
         <div className={`flex w-full h-full`}>
           <img
+            loading="lazy"
             className="rounded-xl group-hover:opacity-10  object-cover "
             src={backgroundImage}
             alt="/"
