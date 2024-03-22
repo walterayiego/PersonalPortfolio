@@ -4,6 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Socials from "../../components/Socials";
 import NavLinks from "../../components/NavLinks";
+import { LinkNames } from "../../constants/Constants";
 
 function Footer() {
   return (
@@ -12,7 +13,7 @@ function Footer() {
       className=" w-[100vw] bg-black p-[2vw] px-[5vw] col justify-between"
     >
       <div className="row min-h-[35vh] justify-between flex-wrap">
-        <div className="min:w-[50vw] sm:w-1/3 h-full my-[2vh]">
+        <div className="min:w-[50vw] sm:w-1/3 h-full my-[3vh]">
           <div className="row items-center mb-2 h-1/4 ">
             <img
               src={logo}
@@ -32,13 +33,19 @@ function Footer() {
           </p>
           <Socials styles="h-[5vh] justify-start " />
         </div>
-        <div className="h-full col hidden sm:block about my-[2vh]">
-          <p className="text-xl aladin text-white">About</p>
-          {NavLinks()}
+        <div className="h-full col hidden sm:block about my-[3vh]">
+          <p className="text-xl text-center aladin text-white">About</p>
+          <ol className="col list-disc list-inside">
+            {LinkNames.map((link, index) => (
+              <li key={index} className="text-white first-letter:uppercase">
+                <a href={`#${link.to}`}>{link.name}</a>
+              </li>
+            ))}
+          </ol>
         </div>
-        <div className="hidden sm:block h-full my-[2vh]">
+        <div className="hidden sm:block h-full my-[3vh]">
           <p className="text-xl aladin text-white">Product</p>
-          <ul className="text-white">
+          <ul className="text-white list-disc list-inside">
             <li>Web Development</li>
             <li>Mobile Development</li>
             <li>UI/UX Design</li>

@@ -65,7 +65,16 @@ const LinkNames = [
   {
     name: "HOME",
     to: "home",
-    component: () => <Home>{NavLinks()}</Home>,
+    component: () => (
+      <Home>
+        <div
+          id="links-div"
+          className="col justify-center p-2 w-1/3 sm:flex-1"
+        >
+          {NavLinks()}
+        </div>
+      </Home>
+    ),
   },
   { name: "SERVICES", to: "services", component: Services },
   { name: "PORTFOLIO", to: "portfolio", component: Portfolio },
@@ -75,7 +84,7 @@ const LinkNames = [
 const fullLinks = [
   ...LinkNames,
   {
-    name: "CONTACT",
+    name: "CONTACT ME",
     to: "contactme",
     component: Contacts,
   },
@@ -92,4 +101,12 @@ const Companies = [
 ];
 const threshold = { threshold: 1 };
 
-export { LinkNames, width, height, Companies, threshold, servicesData, fullLinks };
+export {
+  LinkNames,
+  width,
+  height,
+  Companies,
+  threshold,
+  servicesData,
+  fullLinks,
+};

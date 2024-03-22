@@ -30,7 +30,7 @@ function DrawerContent({ toggleDrawer }: any) {
 
   return (
     <div className="drawer ">
-      <div className="col justify-between py-[5vh] h-full relative">
+      <div className="col justify-between px-3 py-[5vh] h-full relative">
         <div
           onClick={toggleDrawer(false)}
           className=" absolute -top-0 right-0 rounded-full shadow-lg text-white shadow-gray-400 p-3 cursor-pointer mr-1"

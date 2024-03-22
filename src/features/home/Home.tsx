@@ -3,12 +3,14 @@ import { Avatar, AvatarGroup } from "@mui/material";
 
 import Call from "../../assets/Call.png";
 import Me from "../../assets/Me.png";
+import Untitled from "../../assets/Untitled.png";
 import topStar from "../../assets/topStar.png";
 import { Companies } from "../../constants/Constants";
 import SkillLinks from "../../components/SkillLinks";
 import { useInView } from "react-intersection-observer";
 import { ContextData } from "../../apis/ContextProvider";
 import Socials from "../../components/Socials";
+
 
 interface HomeProps {
   children: React.ReactNode;
@@ -32,16 +34,18 @@ function Home({ children }: HomeProps) {
         className="hidden sm:flex self-center mt-[2vh] h-[2em] w-[2em] object-contain"
         alt="start"
       />
-      <img
+      {/* <img
         src={Me}
         className="sm:hidden self-center h-[20vh] w-full object-contain"
         alt="start"
-      />
+      /> */}
       <div className={`row flex-1 sm:my-[2vh]`}>
         <div className="sm:w-2/3 flex-1 col scale-in-bl ">
           <div className="">
-            <p className="sm:text-[5em] text-[3em] font-semibold sm:text-left ">WALTER AYIEGO</p>
-            <p className=" sm:text-2xl uppercase ">
+            <p className="text-[2em] md:text-[3em] lg:text-[4em] font-semibold sm:text-left truncate overflow-ellipsis">
+              WALTER AYIEGO
+            </p>
+            <p className="text-xl md:text-2xl uppercase ">
               Code Alchemist | Full-Stack Solutions
             </p>
             <span className="text-sm font-light ">
@@ -68,19 +72,29 @@ function Home({ children }: HomeProps) {
                     ))}
                   </AvatarGroup>
                 </div>
-                <span className="text-lg py-2 opacity-70 font-light my-2 border">
+                <span className="text-sm sm:text-base md:text-base py-2 opacity-70 font-light my-2">
                   Many clients are satisfied and happy with the results I
                   provide. With over 4+ years of experience in the field, I have
                   the skills and knowledge to help you achieve your goals.
                 </span>
-                <Socials styles="" iconColor="text"/>
+                <Socials styles="" iconColor="text" />
               </div>
 
-              <div
-                id="links-div"
-                className="col justify-center flex-1 p-2 w-fit"
-              >
+              <div className="row flex-1 w-full overflow-clip">
                 {children}
+                <div className="flex-1 sm:hidden row items-end justify-center">
+                  <a href="#contactme" className="sm:hidden overflow-clip">
+                    <img
+                      src={Untitled}
+                      className="w-full h-full object-contain jello-vertica"
+                    />
+                  </a>
+                  {/* <img
+                    src={Me}
+                    className="sm:hidden h-full w-2/3 object-contain"
+                    alt="start"
+                  /> */}
+                </div>
               </div>
             </div>
             <a
@@ -106,7 +120,7 @@ function Home({ children }: HomeProps) {
               alt=""
             />
           </div>
-          <p className="self-end w-[60vw] text-sm my-2 text-focus-in">
+          <p className="self-end w-[60vw] text-xs md:text-sm my-2 text-focus-in">
             I have a passion for coding and technology, and I'm eager to learn
             and grow in the field of software development. I enjoy working on
             various projects, experimenting with new technologies, and
