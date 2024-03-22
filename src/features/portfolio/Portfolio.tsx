@@ -14,11 +14,11 @@ function Portfolio() {
   }, [inView]);
 
   return (
-    <div ref={ref} className={`w-full`}>
+    <div ref={ref} className={`sections`}>
       <div className={`relative px-2 py-16`}>
         <div className={``}>
-          <p className={`heading1 text-left `}>Portfolio</p>
-          <h2 className="text-center py-4">What I&apos;ve Built</h2>
+          <p className={`heading1 text-center `}>Portfolio</p>
+          <h2 className="text-center py-4">An overview of what I&apos;ve Built</h2>
         </div>
         <div className="grid md:grid-cols-2 w-full px-[2vw] gap-8">
           {projects.map((project, index) => {
@@ -39,9 +39,9 @@ function Portfolio() {
       </div>
       <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
         <p>
-          For more visit our
-          <Link href="">
-            <span className=" text-yellow-800 font-semibold text-2xl ">
+          For more visit my
+          <Link href="https://www.github.com/walterayiego">
+            <span className=" text-yellow-800 font-semibold text-2xl pl-2 ">
               Github Page
             </span>
           </Link>

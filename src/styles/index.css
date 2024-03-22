@@ -43,7 +43,7 @@ li {
   @apply text-sm p-2;
 }
 .sections {
-  @apply sm:min-w-[85vw] px-[3vw] pt-[5vh] mx-[2vw] overflow-clip;
+  @apply sm:w-[85vw] px-[3vw] pt-[5vh] mx-[2vw] overflow-clip;
 }
 
 @media (prefers-color-scheme: light) {

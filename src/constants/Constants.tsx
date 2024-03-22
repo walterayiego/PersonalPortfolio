@@ -16,6 +16,7 @@ import kladz from "../assets/kladz.png";
 import dishi from "../assets/dishi.png";
 import ryze from "../assets/ryze.png";
 import wavu from "../assets/wavu.png";
+import Contacts from "../features/contacts/Contacts";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -71,7 +72,14 @@ const LinkNames = [
   // { name: "SKILLS", to: "skills", component: Skills },
   // { name: "TESTIMONIALS", to: "testimonials", component: Testimonials },
 ];
-
+const fullLinks = [
+  ...LinkNames,
+  {
+    name: "CONTACT",
+    to: "contactme",
+    component: Contacts,
+  },
+];
 const Companies = [
   { name: "WavuLabs", logo: wavu, link: "https://wavulabs.org/" },
   {
@@ -84,4 +92,4 @@ const Companies = [
 ];
 const threshold = { threshold: 1 };
 
-export { LinkNames, width, height, Companies, threshold, servicesData };
+export { LinkNames, width, height, Companies, threshold, servicesData, fullLinks };

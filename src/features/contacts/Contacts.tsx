@@ -10,7 +10,7 @@ function Contacts() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    inView && setFragment("contacts");
+    inView && setFragment("contactme");
   }, [inView]);
 
   return (
@@ -47,7 +47,7 @@ function Contacts() {
           <img
             src={Img}
             alt="img"
-            className="object-contain flex-1 bg-black"
+            className="object-cover flex-1 bg-black"
           />
         </div>
       </div>

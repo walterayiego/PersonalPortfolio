@@ -13,7 +13,7 @@ function Footer() {
     >
       <div className="row min-h-[35vh] justify-between flex-wrap">
         <div className="min:w-[50vw] sm:w-1/3 h-full my-[2vh]">
-          <div className="rowCenter mb-2 h-1/4 ">
+          <div className="row items-center mb-2 h-1/4 ">
             <img
               src={logo}
               className="h-full w-1/6 object-contain grayscale"
@@ -23,11 +23,14 @@ function Footer() {
               WALTER AYIEGO
             </p>
           </div>
-          <p className="text-sm text-center font-light text-white">
+          <p className="text-sm text font-light text-white">
             Crafting innovative web and mobile experiences from idea to
             deployment
           </p>
-          <Socials styles="h-[5vh] justify-center " />
+          <p className="text-sm text font-light text-white">
+            You can find me on my socials
+          </p>
+          <Socials styles="h-[5vh] justify-start " />
         </div>
         <div className="h-full col hidden sm:block about my-[2vh]">
           <p className="text-xl aladin text-white">About</p>
@@ -45,10 +48,10 @@ function Footer() {
         <div className="col min-w-1/5 overflow-x-clip my-[2vh]">
           <p className="text-xl text-center aladin text-white">Contact Info</p>
           <p className="text-sm font-light"></p>
-          {/* <div className="row m-2 space-x-3">
+          <div className="row m-2 space-x-3">
             <LocationOnIcon color="secondary" />
-            <p className="text-sm font-light text-white"> Nakuru</p>
-          </div> */}
+            <p className="text-sm font-light text-white"> Nairobi</p>
+          </div>
           <div className="row m-2 space-x-3">
             <PhoneIcon color="secondary" />
             <p className="text-sm font-light text-white">+254715280146</p>

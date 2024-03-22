@@ -7,7 +7,7 @@ function Socials({ styles, iconColor }: { styles: string; iconColor?: any }) {
   const socialItem = [
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/wavu-labs-bba2a2253",
+      link: "https://www.linkedin.com/in/walterayiego",
       icon: <LinkedInIcon color={iconColor ? iconColor : "secondary"} />,
     },
     {
