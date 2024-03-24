@@ -86,7 +86,7 @@ function Home({ children }: HomeProps) {
             </div>
             <a
               href="#contactme"
-              className="hidden sm:flex sm:flex-col sm:flex-1 justify-end "
+              className="hidden sm:flex sm:flex-col sm:flex-1 justify-end pb-[2vh] "
             >
               <img
                 src={Call}
