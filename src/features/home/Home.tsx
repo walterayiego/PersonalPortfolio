@@ -67,8 +67,9 @@ function Home({ children }: HomeProps) {
                   </AvatarGroup>
                 </div>
                 <span className="text-sm sm:text-base md:text-base py-2 opacity-70 font-light my-2">
-                  You will be satisfied and happy with the results I
-                  provide. With vast experience in software development.
+                  Expect nothing short of satisfaction and delight from the
+                  results I deliver. Backed by extensive expertise in software
+                  development
                 </span>
                 <Socials styles="" iconColor="text" />
               </div>
