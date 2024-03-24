@@ -1,7 +1,7 @@
 import { Companies } from "../constants/Constants";
 
 const SkillLinks = () => (
-  <div className="row items-center justify-evenly w-full h-fit bg-brow flex-wrap ">
+  <div className="row items-center justify-evenly w-full h-fit bg-brow flex-wrap py-1- ">
     {Companies.map((company, index) => (
       <div
         key={index}
