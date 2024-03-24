@@ -4,7 +4,7 @@ import { ContextData } from "../../apis/ContextProvider";
 import { servicesData } from "../../constants/Constants";
 
 function Services() {
-  const { ref, inView }: any = useInView({ threshold: 0.1 });
+  const { ref, inView }: any = useInView({ threshold: 0.2 });
   const { setFragment }: any = ContextData();
 
   useEffect(() => {

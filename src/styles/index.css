@@ -33,7 +33,6 @@ body::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
 }
-
 p,
 h1 {
   @apply font-mono;
