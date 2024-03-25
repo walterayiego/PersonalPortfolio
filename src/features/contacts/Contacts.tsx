@@ -39,16 +39,17 @@ function Contacts() {
                 Get Started
               </span>
 
-              <span className="text-white/40 underline">More About Me</span>
+              <a
+                href="https://drive.google.com/file/d/1WqsY1pOwkh6z-Vm11Jzpku6rDgIYYbM6/view?usp=sharing"
+                className="text-white/40 underline"
+              >
+                More About Me
+              </a>
             </div>
           </div>
         </div>
         <div className="h-[50vh] w-full sm:flex sm:flex-col hidden overflow-clip">
-          <img
-            src={Img}
-            alt="img"
-            className="object-cover flex-1 bg-black"
-          />
+          <img src={Img} alt="img" className="object-cover flex-1 bg-black" />
         </div>
       </div>
     </>
